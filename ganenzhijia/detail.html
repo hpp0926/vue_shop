@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					<div class="mui-input-row mui-search">
+						<input type="search" class="mui-input-clear" placeholder="请输入商品名称">
+					</div>
+				</h1>
+				<span class="mui-pull-right"><img class="headShare" src="images/share.png"/></span>
+			</header>
+			<div class="mui-content">
+				<div class="swiper-container detailBanner">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/img1.png"/></div>
+						<div class="swiper-slide"><img src="images/img1.png"/></div>
+						<div class="swiper-slide"><img src="images/img1.png"/></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="detailBox">
+					<div class="detailPriceBox">
+						<span class="detailPrice"><i>￥</i>20.50</span>
+						<span class="priceGrey">￥20.50</span>
+						<span class="detailNum">已售<i>120</i></span>
+					</div>
+					<h3 class="detailTit">稻香村腰果酥鲜香甜味原味145g/盒*3 </h3>
+					<h4 class="detailTitSmall">这里是副标题位置，可以添加副...</h4>
+					<p class="detailTxt">购买此商品可获得<span>30积分</span></p>
+				</div>
+				<div class="detailCon">
+					<div class="detailConLeft">
+						请选择
+						<span>规格数量</span>
+					</div>
+					<span class="detailConRight"><img src="images/more.png"/></span>
+				</div>
+				<div class="detailCon">
+					服务承诺
+					<span class="detailIcon"><img src="images/detail_icon1.png"/>按时发货</span>
+					<span class="detailIcon"><img src="images/detail_icon2.png"/>正品保证</span>
+					<span class="detailIcon"><img src="images/detail_icon3.png"/>放心售后</span>
+				</div>
+				<div class="detailPj">
+					<h4 class="detailPjTit">
+						<span>评价(10)</span>
+						<span class="detailPjTitRight">好评度99%<i class="mui-icon mui-icon-arrowright"></i></span>
+					</h4>
+					<div class="detailPjHead">
+						
+					</div>
+				</div>
+			</div>
+			<footer class="detailFooter">  
+				<span>
+					<img src="images/kefu.png"/>
+					客服
+				</span>
+				<span>
+					<img src="images/shoucang.png"/>
+					收藏
+				</span>
+				<button class="gwcBtn">加入购物车</button>
+				<button class="buyBtn">立即购买</button>
+		    </footer>
+		</div>
+	</body>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+				this.init();
+			},
+			methods: {
+				init:function(){
+					var swiper = new Swiper('.detailBanner.swiper-container', {
+				        pagination: '.swiper-pagination',
+				        paginationType: 'fraction'
+				    });
+				}
+			}
+		});
+		
+	</script>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body class="bgWhite">
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+			</header>
+			<div class="mui-content">
+				<div class="loginBox">
+					<div class="loginLogo">
+						<img src="images/logo.png" />
+					</div>
+					<ul class="loginInput">
+						<li>
+							<span class="loginIcon"></span>
+							<input type="tel" v-model="phoneNumber" @blur="isLogin();" placeholder="请输入手机号" />
+						</li>
+						<li>
+							<span class="loginIcon"></span>
+							<input type="password"  v-model="loginPsd" @blur="isLogin();" placeholder="请输入登录密码" />
+						</li>
+					</ul>
+					<div class="mui-text-center">
+						<button class="registBtn" @click="login();" :disabled="isAble">登录</button>
+					</div>
+					<p class="loginTxt">
+						<a href="">注册新用户</a>
+						<a href="">找回密码</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+				login:function(){
+					var that= this;
+					var reg = /^1\d{10}$/; //手机号码正则
+					if(!reg.test(that.phoneNumber)) {
+						mui.alert("手机号码格式不正确！", "温馨提示", "确认");
+						return;
+					};
+					var param = {
+						"login_name": that.phoneNumber,
+						"password": that.loginPsd
+					};
+					zy.addLoading();
+					zy.postAjax("/api/passport", param, function(data) {
+						zy.delLoading();
+						if(data.code == "1"){
+							sessionStorage.setItem("code",data.data);
+							location.href="index.html";
+						}else{
+							mui.alert(data.msg);
+							return;
+						}
+						
+					}, function(error) {
+						zy.delLoading();
+						mui.alert(error.msg);
+					})
+				},
+				isLogin:function(){
+					var that= this;
+					if(that.phoneNumber && that.loginPsd){
+						that.isAble = false;
+					}else{
+						that.isAble = true;
+					}
+				}
+			}
+		});
+		
+	</script>
+
+</html>
