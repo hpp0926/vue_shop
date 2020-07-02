@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>积分列表</title>
+		<title>列表</title>
 		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -13,21 +13,21 @@
 	<body>
 		<div id="vue">
 			<header class="mui-bar mui-bar-nav">
-				<span class="mui-pull-left mui-icon mui-icon-list"></span>
-				<h1 class="mui-title" style="right: .3rem;">
-					<div class="mui-input-row mui-search">
-						<input type="search" class="mui-input-clear" placeholder="请输入商品名称">
-					</div>
+				<span class="mui-pull-left mui-icon mui-icon-arrowleft"></span>
+				<h1 class="mui-title">
+					推广产品
 				</h1>
+				<span class="mui-pull-right mui-icon mui-icon-search" style="margin-top: .1rem;"></span>
 			</header>
 			<div class="mui-content">
 				<ul class="listTab">
-					<li class="cur">综合</li>
+					<li>佣金</li>
+					<li class="cur">最新</li>
 					<li>销量</li>
 					<li>价格 <span class="tabArrowTop"></span><span class="tabArrowDown"></span></li>
-					<li></li>
+					
 				</ul>
-				<div class="listBox listBoxRow">   <!--listBoxRow-->
+				<div class="listBox listBoxRow">
 					<ul class="listCon">
 						<li>
 							<img src="images/img1.png"/>
@@ -35,44 +35,51 @@
 								<h3 class="listTit">稻香村腰果酥鲜香甜味 145g/盒*3</h3>
 								<h4 class="listTitSmall">这里是副标题这里是副标题这里是副标题</h4>
 								<p class="listPrice">
-									<span class="priceGrey">￥22.50</span>
-									<span class="priceRed">270<i>积分</i></span>
+									<span class="priceRed"><i>￥</i>20.50</span>
+									<span class="priceGrey" style="clear: both;">￥22.50</span>
 								</p>
 								<p class="listNum">
-									已兑换<span>12</span>件
+									购买此商品可获得<span>12</span>积分
 								</p>
-								<button class="pointsBtn">立即兑换</button>
+								<p class="listNum">
+									已卖出<span>12</span>件
+								</p>
+								<span class="listBtn"><img src="images/share.png"/></span>
 							</div>
+							
 						</li>
 						<li>
 							<img src="images/img1.png"/>
 							<div class="listConTxt">
-								<h3 class="listTit">稻香村腰果酥鲜香甜味 145g/盒*3</h3>
+								<h3 class="listTit">稻香村腰果酥鲜香甜味稻香村腰果酥鲜香甜味 145g/盒*3</h3>
 								<h4 class="listTitSmall">这里是副标题这里是副标题这里是副标题</h4>
 								<p class="listPrice">
-									<span class="priceGrey">￥22.50</span>
-									<span class="priceRed">270<i>积分</i></span>
+									<span class="priceRed">￥20.50</span>
+									<span class="priceGrey" style="clear: both;">￥22.50</span>
 								</p>
 								<p class="listNum">
-									已兑换<span>12</span>件
+									购买此商品可获得<span>12</span>积分
 								</p>
-								<button class="pointsBtn">立即兑换</button>
-							</div>
+								<p class="listNum">
+									已卖出<span>12</span>件
+								</p>
+								<span class="listBtn"><img src="images/share.png"/></span>
+							<div class="listConTxt">
 						</li>
 					</ul>
 				</div>
 				<p class="listTxt">已经到底了呦</p>
 			</div>
 			<nav class="mui-bar mui-bar-tab">  
-		        <a class="mui-tab-item" id="page_index" target="index.html">  
+		        <a class="mui-tab-item mui-active" id="page_index" target="index.html">  
 		            <span class="tab_icon tab_icon1"></span>  
 		            <span class="mui-tab-label">首页</span>  
 		        </a>  
-		        <a class="mui-tab-item" id="page_category" target="list.html">  
+		        <a class="mui-tab-item" id="page_category" target="category.html">  
 		            <span class="tab_icon tab_icon2"></span>  
 		            <span class="mui-tab-label">自营</span>  
 		        </a>  
-		        <a class="mui-tab-item mui-active" id="page_jf" target="pointList.html">  
+		        <a class="mui-tab-item" id="page_jf" target="integral.html">  
 		            <span class="tab_icon tab_icon3"></span>  
 		            <span class="mui-tab-label">积分</span>  
 		        </a>  
@@ -80,7 +87,7 @@
 		            <span class="tab_icon tab_icon4"></span>  
 		            <span class="mui-tab-label">购物车</span>  
 		        </a>
-		        <a class="mui-tab-item" id="page_my" target="personal.html">  
+		        <a class="mui-tab-item" id="page_my" target="my.html">  
 		            <span class="tab_icon tab_icon5"></span>  
 		            <span class="mui-tab-label">我的</span>  
 		        </a>

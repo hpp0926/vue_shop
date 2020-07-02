@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>退款申请</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					退款申请
+				</h1>
+			</header>
+			<div class="mui-content">
+				<div class="applyProcess">
+					<ul>
+						<li class="cur">
+							<div class="proIcon"><span></span></div>
+							<p>申请</p>
+						</li>
+						<li>
+							<div class="proIcon"><span></span></div>
+							<p>审核</p>
+						</li>
+						<li>
+							<div class="proIcon"><span></span></div>
+							<p>退货</p>
+						</li>
+						<li>
+							<div class="proIcon"><span></span></div>
+							<p>收货</p>
+						</li>
+						<li>
+							<div class="proIcon"><span></span></div>
+							<p>退款</p>
+						</li>
+						<li>
+							<div class="proIcon"><span></span></div>
+							<p>完成</p>
+						</li>
+					</ul>
+				</div>
+				<div class="shopBox">
+					<div class="orderNumBox">
+						<span class="orderNum">订单号：21345614</span>
+					</div>
+					<ul class="shopList">
+						<li>
+							<div class="goodsBox">
+								<img class="goodsImg" src="images/img1.png"/>
+								<div class="shopRight">
+									<h4 class="goodsName">稻香村腰果酥鲜香甜味原味 145g/盒*3 </h4>
+									<h5 class="goodsSubtitle">这里是副标题这里是副标题这里是副标题</h5>
+									<p class="goodsSelect">
+										<span class="goodsChoose">龙井绿茶龙井绿茶</span>,
+										<span>选服务<i class="mui-icon mui-icon-arrowdown"></i></span>
+									</p>
+									<div class="goodsNumBox">
+										<span class="goodsPrice"><i>￥</i>20.50</span>
+										<span class="goodsNum">
+											X <i>1</i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="goodsBox">
+								<img class="goodsImg" src="images/img1.png"/>
+								<div class="shopRight">
+									<h4 class="goodsName">稻香村腰果酥鲜香甜味原味 145g/盒*3 </h4>
+									<h5 class="goodsSubtitle">这里是副标题这里是副标题这里是副标题</h5>
+									<p class="goodsSelect">
+										<span class="goodsChoose">龙井绿茶龙井绿茶</span>,
+										<span>选服务<i class="mui-icon mui-icon-arrowdown"></i></span>
+									</p>
+									<div class="goodsNumBox">
+										<span class="goodsPrice"><i>￥</i>20.50</span>
+										<span class="goodsNum">
+											X <i>1</i>
+										</span>
+									</div>
+								</div>
+							</div>
+							
+						</li>
+					</ul>
+					<p class="bankTotal">
+						实付款：
+						<span class="red">
+							<i>￥</i>200.00
+							<i>（含运费）</i>
+						</span>
+					</p>
+				</div>
+				<div class="shopBox">
+					<ul class="applyCon">
+						<li>
+							<h5>退款金额</h5>
+							<p><input type="text" placeholder="不超过20.50元" /></p>
+						</li>
+						<li>
+							<h5>退款原因</h5>
+							<p>请选择退款原因<span class="mui-icon mui-icon-arrowright"></span></p>
+						</li>
+						<li>
+							<h5>退款说明</h5>
+							<p><input type="text" placeholder="内容在2~200字范围内" /></p>
+						</li>
+						<li>
+							<h5>退款凭证</h5>
+							<p>请补充支持退款原因的聊天记录截图、实物照片、 第三方证明等相关证明</p>
+							<div class="addImg">
+								<span class="mui-icon mui-icon-plusempty"></span>
+								<p>添加图片</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-text-center">
+					<button class="applyBtn">立即申请退款</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+			}
+		});
+		
+	</script>
+
+</html>

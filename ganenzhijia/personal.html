@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<style type="text/css">
+		.mui-content{
+			padding-bottom: 1rem;
+		}
+	</style>
+
+	<body>
+		<div id="vue">
+			<div class="mui-content">
+				<div class="perTopBox">
+					<span class="perHead"><img src="images/perHead.png"/></span>
+					<div class="perTxt">
+						<h4>15852636524</h4>
+						<p>我的积分：2000</p>
+					</div>
+					<span class="perSet"><img src="images/per_icon1.png"/></span>
+				</div>
+				<div class="perBox">
+					<div class="perConBox">
+						<h3 class="perTit">
+							我的订单
+							<span>
+								查看全部订单
+								<i class="mui-icon mui-icon-arrowright"></i>
+							</span>
+						</h3>
+						<ul class="perOrder">
+							<li>
+								<img src="images/per_icon2.png"/>
+								<p>待付款</p>
+								<span class="perOrderNum">2</span>
+							</li>
+							<li>
+								<img src="images/per_icon3.png"/>
+								<p>待发货</p>
+								<span class="perOrderNum">2</span>
+							</li>
+							<li>
+								<img src="images/per_icon4.png"/>
+								<p>待收货</p>
+								<span class="perOrderNum">2</span>
+							</li>
+							<li>
+								<img src="images/per_icon5.png"/>
+								<p>评价</p>
+								<span class="perOrderNum">2</span>
+							</li>
+							<li>
+								<img src="images/per_icon6.png"/>
+								<p>退款/售后</p>
+								<span class="perOrderNum">2</span>
+							</li>
+						</ul>
+					</div>
+					<div class="perConBox">
+						<h3 class="perTit">
+							我的积分
+							<span>
+								详情
+								<i class="mui-icon mui-icon-arrowright"></i>
+							</span>
+						</h3>
+						<div class="perJf">
+							<div class="perJfImg">
+								<div class="perJfLeft">
+									<div>
+										<h4><span>2000</span>积分</h4>
+										<p>兑换热门商品<span class="mui-icon mui-icon-arrowright"></span></p>
+									</div>
+								</div>
+								<div class="perJfRight">
+									<div>
+										<h5>即将到账</h5>
+										<h4><span>2000</span>积分</h4>
+										<p>兑换热门商品<span class="mui-icon mui-icon-arrowright"></span></p>
+									</div>
+								</div>
+							</div>
+							<ul class="perMsg">
+								<li>
+									<span class="perMsgGrey">1天前</span>
+									在【喜来超市】消费50元，获取<span class="red">50积分</span> 
+								</li>
+								<li>
+									<span class="perMsgGrey">2天前</span>
+									在【喜来超市】消费50元，获取<span class="red">50积分</span> 
+								</li>
+							</ul>
+						</div>
+					</div>	
+					<div class="perConBox">
+						<h3 class="perTit">
+							账户设置
+						</h3>
+						<ul class="perSet">
+							<li>
+								<img src="images/per_icon7.png" />
+								<span class="perSetLeft">
+									收货地址
+								</span>
+								<span class="perSetRight">
+									修改添加收货地址
+									<i class="mui-icon mui-icon-arrowright"></i>
+								</span>
+							</li>
+							<li>
+								<img src="images/per_icon8.png" />
+								<span class="perSetLeft">
+									修改密码
+								</span>
+								<span class="perSetRight">
+									忘记密码可修改
+									<i class="mui-icon mui-icon-arrowright"></i>
+								</span>
+							</li>
+							<li>
+								<img src="images/per_icon9.png" />
+								<span class="perSetLeft">
+									我的收藏
+								</span>
+								<span class="perSetRight">
+									<i class="mui-icon mui-icon-arrowright"></i>
+								</span>
+							</li>
+							<li>
+								<img src="images/per_icon10.png" />
+								<span class="perSetLeft">
+									关于我们
+								</span>
+								<span class="perSetRight">
+									<i class="mui-icon mui-icon-arrowright"></i>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<nav class="mui-bar mui-bar-tab">  
+		        <a class="mui-tab-item" id="page_index" target="index.html">  
+		            <span class="tab_icon tab_icon1"></span>  
+		            <span class="mui-tab-label">首页</span>  
+		        </a>  
+		        <a class="mui-tab-item" id="page_category" target="list.html">  
+		            <span class="tab_icon tab_icon2"></span>  
+		            <span class="mui-tab-label">自营</span>  
+		        </a>  
+		        <a class="mui-tab-item" id="page_jf" target="pointList.html">  
+		            <span class="tab_icon tab_icon3"></span>  
+		            <span class="mui-tab-label">积分</span>  
+		        </a>  
+		        <a class="mui-tab-item" id="page_shop" target="shop.html">  
+		            <span class="tab_icon tab_icon4"></span>  
+		            <span class="mui-tab-label">购物车</span>  
+		        </a>
+		        <a class="mui-tab-item mui-active" id="page_my" target="personal.html">  
+		            <span class="tab_icon tab_icon5"></span>  
+		            <span class="mui-tab-label">我的</span>  
+		        </a>
+		    </nav>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+	</script>
+</html>

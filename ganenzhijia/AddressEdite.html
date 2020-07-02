@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>编辑收货地址</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					编辑收货地址
+				</h1>
+			</header>
+			<div class="mui-content">
+				<ul class="editeAddress">
+					<li>
+						<h3 class="addressTit">收货人</h3>
+						<input type="text" class="editeInput" placeholder="请输入收货人" />
+					</li>
+					<li>
+						<h3 class="addressTit">联系方式</h3>
+						<input type="tel" class="editeInput" placeholder="请输入联系方式" />
+					</li>
+					<li>
+						<h3 class="addressTit">所在地区</h3>
+						<input type="text" class="editeInput" placeholder="请选择" readonly="" />
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</li>
+					<li>
+						<h3 class="addressTit">详细地址</h3>
+						<input type="text" class="editeInput" placeholder="请输入详细地址" />
+					</li>
+					<li>
+						<h3 class="addressTit">邮政编码</h3>
+						<input type="text" class="editeInput" placeholder="邮政编码" />
+					</li>
+				</ul>
+				<div class="setMoren">
+					<div class="mui-input-row mui-checkbox">
+						<label>设置为默认地址</label>
+						<input name="checkbox" type="checkbox" checked="checked" >
+					</div>
+				</div>
+				<div class="mui-text-center">
+					<button class="deleteAddBtn">删除收货地址</button>
+				</div>
+				<div class="mui-text-center">
+					<button class="applyBtn">保存地址</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+
+			},
+			created: function() {
+
+			},
+			mounted: function() {
+
+			},
+			methods: {}
+		});
+	</script>
+
+</html>

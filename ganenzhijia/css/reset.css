@@ -3,7 +3,9 @@
 	color: #333;
 	margin: 0;
 	padding: 0;
+	touch-action: pan-y;
 }
+
 
 html,body,div,p,img,span,h1,h2,h3,h4,h5 {
 	margin: 0;
@@ -36,11 +38,11 @@ input::-ms-input-placeholder,textarea::-ms-input-placeholder{  color: #999;}
 .mui-checkbox, .mui-radio{
 	display: inline-block;
 	vertical-align: middle;
-	margin-top: -5px;
+	margin-top: 0px;
 }
 .mui-checkbox label, .mui-radio label{
 	padding: .1rem 0;
-	padding-left: .5rem;
+	padding-left: .56rem;
 	font-size: .28rem;
 	display: inline;
 }
@@ -51,9 +53,9 @@ input::-ms-input-placeholder,textarea::-ms-input-placeholder{  color: #999;}
 	width: .4rem;
 	height: .4rem;
 	top: 50%;
-	margin-top: -.32rem;
+	margin-top: -.2rem;
 }
-.mui-checkbox input[type=checkbox]{
+.mui-checkbox input[type=checkbox],.mui-radio input[type=radio]{
 	left: 0;
 }
 .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
@@ -68,9 +70,10 @@ input::-ms-input-placeholder,textarea::-ms-input-placeholder{  color: #999;}
 	box-shadow:none;
 }
 .mui-bar .mui-title{
-	line-height: .95rem;
+	line-height: 1rem;
 	font-size: .36rem;
 	left: 1.1rem;
+	height: 1rem;
 }
 .mui-bar input[type=search]{
 	height: 0.68rem;
@@ -120,4 +123,15 @@ input::-ms-input-placeholder,textarea::-ms-input-placeholder{  color: #999;}
 }
 .mui-content~.mui-bar-tab{
 	box-shadow: 0px 0px 8px rgba(0,0,0,.1);
+}
+.mui-bar .mui-btn-link{
+	color: #222;
+	line-height: 1rem;
+	font-size: .28rem;
+}
+.red{
+	color: #e12918;
+}
+.mui-btn, button, input[type="button"], input[type="reset"], input[type="submit"]{
+	font-size: .28rem;
 }

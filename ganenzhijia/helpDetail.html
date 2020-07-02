@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					帮助中心
+				</h1>
+				<span class="mui-pull-right"><img class="helpMsg" src="images/help_icon.png"/></span>
+			</header>
+			<div class="mui-content">
+				<div class="helpBoxDetail">
+					<h3 class="helpDetailTit">商品退货有哪些保障及注意事项？</h3>
+					<h4 class="helpDetailTitSmall">发布日期：2020年1月9日</h4>
+					<p>根据《中华人民共和国消费者权益保护法》第三章第二十五条，经营者采用网络、电视、电话、邮购等方式销售商品，消费者有权</p>
+					<img src="images/banner.png" alt="" />
+					<p>除前款所列商品外，其他根据商品性质并经消费者在购买时确认不宜退货的商品，不适用无理由退货。消费者退货的商品应当完好</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+			}
+		});
+		
+	</script>
+
+</html>

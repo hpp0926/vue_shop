@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>积分明细</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<style type="text/css">
+		.mui-bar-nav~.mui-content{
+			padding-top: 1.8rem;
+		}
+	</style>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					积分明细
+				</h1>
+			</header>
+			<div class="mui-content">
+				<div class="orderTab">
+					<div class="mui-segmented-control">
+						<a class="mui-control-item mui-active" href="#item1">消费</a>
+						<a class="mui-control-item" href="#item2">获取</a>
+					</div>
+				</div>
+				<div id="item1" class="mui-control-content mui-active">
+					<ul class="pointList">
+						<li>
+							<div class="pointListCon">
+								<img src="images/img1.png" class="pointImg" />
+								<div class="pointCon">
+									<h4>订单号：21345614</h4>
+									<p>2020-1-11</p>
+								</div>
+								<span class="red">-20积分</span>
+							</div>
+						</li>
+						<li>
+							<div class="pointListCon">
+								<img src="images/img1.png" class="pointImg" />
+								<div class="pointCon">
+									<h4>订单号：21345614</h4>
+									<p>2020-1-11</p>
+								</div>
+								<span class="red">-20积分</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul class="pointList pointListHq">
+						<li>
+							<h4 class="pointListTit">
+								感恩之家直营店
+								<span class="red">+20积分</span>
+							</h4>
+							<p class="pointDate">2020-1-11 </p>
+							<div class="pointListCon">
+								<img src="images/img1.png" class="pointImg" />
+								<div class="pointCon">
+									<h4>订单号：21345614</h4>
+									<h5>在线支付<span class="red">20元</span></h5>
+									<p>2020-1-11</p>
+								</div>
+							</div>
+							<div class="pointListCon">
+								<img src="images/img1.png" class="pointImg" />
+								<div class="pointCon">
+									<h4>订单号：21345614</h4>
+									<h5>在线支付<span class="red">20元</span></h5>
+									<p>2020-1-11</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h4 class="pointListTit">
+								感恩之家直营店
+								<span class="red">+20积分</span>
+							</h4>
+							<p class="pointDate">2020-1-11 </p>
+							<div class="pointListCon">
+								<img src="images/img1.png" class="pointImg" />
+								<div class="pointCon">
+									<h4>订单号：21345614</h4>
+									<h5>在线支付<span class="red">20元</span></h5>
+									<p>2020-1-11</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+			}
+		});
+		
+	</script>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<style type="text/css">
+		.mui-bar-nav~.mui-content{
+			padding-top: 1.8rem;
+		}
+	</style>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					我的订单
+				</h1>
+			</header>
+			<div class="mui-content">
+				<div class="orderTab">
+					<div class="mui-segmented-control">
+						<a class="mui-control-item mui-active" href="#item1">全部</a>
+						<a class="mui-control-item" href="#item2">待付款</a>
+						<a class="mui-control-item" href="#item3">待发货</a>
+						<a class="mui-control-item" href="#item4">待收货</a>
+						<a class="mui-control-item" href="#item5">已完成</a>
+					</div>
+				</div>
+				<div id="item1" class="mui-control-content mui-active">
+					<div class="shopBox">
+						<div class="orderNumBox">
+							<span class="orderNum">订单号：21345614</span>
+							<span class="orderStatus">待付款</span>
+						</div>
+						<ul class="shopList">
+							<li>
+								<div class="goodsBox">
+									<img class="goodsImg" src="images/img1.png"/>
+									<div class="shopRight">
+										<h4 class="goodsName">稻香村腰果酥鲜香甜味原味 145g/盒*3 </h4>
+										<h5 class="goodsSubtitle">这里是副标题这里是副标题这里是副标题</h5>
+										<p class="goodsSelect">
+											<span class="goodsChoose">龙井绿茶龙井绿茶</span>,
+											<span>选服务<i class="mui-icon mui-icon-arrowdown"></i></span>
+										</p>
+										<div class="goodsNumBox bankNumBox">
+											<span class="goodsPrice"><i>￥</i>20.50</span>
+											<span class="goodsNum">
+												X <i>1</i>
+											</span>
+										</div>
+										<p class="goodsTxt">购买此商品可获得<span>30积分</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="goodsBox">
+									<img class="goodsImg" src="images/img1.png"/>
+									<div class="shopRight">
+										<h4 class="goodsName">稻香村腰果酥鲜香甜味原味 145g/盒*3 </h4>
+										<h5 class="goodsSubtitle">这里是副标题这里是副标题这里是副标题</h5>
+										<p class="goodsSelect">
+											<span class="goodsChoose">龙井绿茶龙井绿茶</span>,
+											<span>选服务<i class="mui-icon mui-icon-arrowdown"></i></span>
+										</p>
+										<div class="goodsNumBox bankNumBox">
+											<span class="goodsPrice"><i>￥</i>20.50</span>
+											<span class="goodsNum">
+												X <i>1</i>
+											</span>
+										</div>
+										<p class="goodsTxt">购买此商品可获得<span>30积分</span></p>
+									</div>
+								</div>
+								<p class="bankTotal">
+									商品合计:
+									<span class="red">
+										<i>￥</i>200.00
+									</span>
+								</p>
+							</li>
+						</ul>
+						<div class="orderBtnBox">
+							<button class="orderBtn">取消订单</button>
+							<button class="orderRedBtn">付款</button>
+						</div>
+					</div>
+					<div class="shopBox">
+						<div class="orderNumBox">
+							<span class="orderNum">订单号：21345614</span>
+							<span class="orderStatus orderStatusDone">已完成</span>
+						</div>
+						<ul class="shopList">
+							<li>
+								<div class="goodsBox">
+									<img class="goodsImg" src="images/img1.png"/>
+									<div class="shopRight">
+										<h4 class="goodsName">稻香村腰果酥鲜香甜味原味 145g/盒*3 </h4>
+										<h5 class="goodsSubtitle">这里是副标题这里是副标题这里是副标题</h5>
+										<p class="goodsSelect">
+											<span class="goodsChoose">龙井绿茶龙井绿茶</span>,
+											<span>选服务<i class="mui-icon mui-icon-arrowdown"></i></span>
+										</p>
+										<div class="goodsNumBox bankNumBox">
+											<span class="goodsPrice"><i>￥</i>20.50</span>
+											<span class="goodsNum">
+												X <i>1</i>
+											</span>
+										</div>
+										<p class="goodsTxt">购买此商品可获得<span>30积分</span></p>
+									</div>
+								</div>
+								<p class="bankTotal">
+									商品合计:
+									<span class="red">
+										<i>￥</i>200.00
+									</span>
+								</p>
+							</li>
+						</ul>
+						<div class="orderBtnBox">
+							<button class="orderBtn">去评价</button>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<div class="shopBox">
+						<div class="orderNumBox">
+							<span class="orderNum">订单号：21345614</span>
+							<span class="orderStatus">待付款</span>
+						</div>
+						<ul class="shopList">
+							<li>
+								<div class="goodsBox">
+									<img class="goodsImg" src="images/img1.png"/>
+									<div class="shopRight">
+										<h4 class="goodsName">稻香村腰果酥鲜香甜味原味 145g/盒*3 </h4>
+										<h5 class="goodsSubtitle">这里是副标题这里是副标题这里是副标题</h5>
+										<p class="goodsSelect">
+											<span class="goodsChoose">龙井绿茶龙井绿茶</span>,
+											<span>选服务<i class="mui-icon mui-icon-arrowdown"></i></span>
+										</p>
+										<div class="goodsNumBox bankNumBox">
+											<span class="goodsPrice"><i>￥</i>20.50</span>
+											<span class="goodsNum">
+												X <i>1</i>
+											</span>
+										</div>
+										<p class="goodsTxt">购买此商品可获得<span>30积分</span></p>
+									</div>
+								</div>
+								<p class="bankTotal">
+									商品合计:
+									<span class="red">
+										<i>￥</i>200.00
+									</span>
+								</p>
+							</li>
+						</ul>
+						<div class="orderBtnBox">
+							<button class="orderBtn">取消订单</button>
+							<button class="orderRedBtn">付款</button>
+						</div>
+					</div>
+				</div>
+				<div id="item3" class="mui-control-content">
+					<div class="shopBox">
+						<div class="orderNumBox">
+							<span class="orderNum">订单号：21345614</span>
+							<span class="orderStatus">待发货</span>
+						</div>
+						<ul class="shopList">
+							<li>
+								<div class="goodsBox">
+									<img class="goodsImg" src="images/img1.png"/>
+									<div class="shopRight">
+										<h4 class="goodsName">稻香村腰果酥鲜香甜味原味 145g/盒*3 </h4>
+										<h5 class="goodsSubtitle">这里是副标题这里是副标题这里是副标题</h5>
+										<p class="goodsSelect">
+											<span class="goodsChoose">龙井绿茶龙井绿茶</span>,
+											<span>选服务<i class="mui-icon mui-icon-arrowdown"></i></span>
+										</p>
+										<div class="goodsNumBox bankNumBox">
+											<span class="goodsPrice"><i>￥</i>20.50</span>
+											<span class="goodsNum">
+												X <i>1</i>
+											</span>
+										</div>
+										<p class="goodsTxt">购买此商品可获得<span>30积分</span></p>
+									</div>
+								</div>
+								<p class="bankTotal">
+									商品合计:
+									<span class="red">
+										<i>￥</i>200.00
+									</span>
+								</p>
+							</li>
+						</ul>
+						<div class="orderBtnBox">
+							<button class="orderBtn">取消订单</button>
+						</div>
+					</div>
+				</div>
+				<div id="item4" class="mui-control-content">
+					<div class="shopBox">
+						<div class="orderNumBox">
+							<span class="orderNum">订单号：21345614</span>
+							<span class="orderStatus">待收货</span>
+						</div>
+						<ul class="shopList">
+							<li>
+								<div class="goodsBox">
+									<img class="goodsImg" src="images/img1.png"/>
+									<div class="shopRight">
+										<h4 class="goodsName">稻香村腰果酥鲜香甜味原味 145g/盒*3 </h4>
+										<h5 class="goodsSubtitle">这里是副标题这里是副标题这里是副标题</h5>
+										<p class="goodsSelect">
+											<span class="goodsChoose">龙井绿茶龙井绿茶</span>,
+											<span>选服务<i class="mui-icon mui-icon-arrowdown"></i></span>
+										</p>
+										<div class="goodsNumBox bankNumBox">
+											<span class="goodsPrice"><i>￥</i>20.50</span>
+											<span class="goodsNum">
+												X <i>1</i>
+											</span>
+										</div>
+										<p class="goodsTxt">购买此商品可获得<span>30积分</span></p>
+									</div>
+								</div>
+								<p class="bankTotal">
+									商品合计:
+									<span class="red">
+										<i>￥</i>200.00
+									</span>
+								</p>
+							</li>
+						</ul>
+						<div class="orderBtnBox">
+							<button class="orderBtn">申请售后</button>
+							<button class="orderBtn">查看物流</button>
+							<button class="orderRedBtn">确认收货</button>
+						</div>
+					</div>
+				</div>
+				<div id="item5" class="mui-control-content">
+					<div class="shopBox">
+						<div class="orderNumBox">
+							<span class="orderNum">订单号：21345614</span>
+							<span class="orderStatus orderStatusDone">已完成</span>
+						</div>
+						<ul class="shopList">
+							<li>
+								<div class="goodsBox">
+									<img class="goodsImg" src="images/img1.png"/>
+									<div class="shopRight">
+										<h4 class="goodsName">稻香村腰果酥鲜香甜味原味 145g/盒*3 </h4>
+										<h5 class="goodsSubtitle">这里是副标题这里是副标题这里是副标题</h5>
+										<p class="goodsSelect">
+											<span class="goodsChoose">龙井绿茶龙井绿茶</span>,
+											<span>选服务<i class="mui-icon mui-icon-arrowdown"></i></span>
+										</p>
+										<div class="goodsNumBox bankNumBox">
+											<span class="goodsPrice"><i>￥</i>20.50</span>
+											<span class="goodsNum">
+												X <i>1</i>
+											</span>
+										</div>
+										<p class="goodsTxt">购买此商品可获得<span>30积分</span></p>
+									</div>
+								</div>
+								<p class="bankTotal">
+									商品合计:
+									<span class="red">
+										<i>￥</i>200.00
+									</span>
+								</p>
+							</li>
+						</ul>
+						<div class="orderBtnBox">
+							<button class="orderBtn">去评价</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+			}
+		});
+		
+	</script>
+
+</html>

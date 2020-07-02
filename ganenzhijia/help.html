@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					帮助中心
+				</h1>
+				<span class="mui-pull-right"><img class="helpMsg" src="images/help_icon.png"/></span>
+			</header>
+			<div class="mui-content">
+				<div class="helpBox">
+					<h3 class="helpTit">常见问题</h3>
+					<ul class="helpList">
+						<li>
+							<img class="helpIcon" src="images/help_icon1.png"/>
+							<p class="helpTxt">商品退货有哪些保障及注意事项</p>
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</li>
+						<li>
+							<img class="helpIcon" src="images/help_icon1.png"/>
+							<p class="helpTxt">商品退货有哪些保障及注意事项</p>
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+			}
+		});
+		
+	</script>
+
+</html>

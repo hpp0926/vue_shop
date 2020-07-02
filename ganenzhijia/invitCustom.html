@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>累计客户</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					累计客户
+				</h1>
+				<span class="mui-pull-right mui-icon mui-icon-search" style="margin-top: .1rem;"></span>
+			</header>
+			<div class="mui-content">
+				<div class="invitOdTapBox">
+					<ul class="invitOdTap">
+						<li class="cur">全部</li>
+						<li>今天</li>
+						<li>昨天</li>
+						<li>近一周</li>
+					</ul>
+					<span class="invitOdTapRight">自定义时间</span>
+				</div>
+				<ul class="invitCustomList">
+					<li>
+						<div class="invitCustomTop">
+							<img class="invitCustomImg" src="images/invitCusHead.png"/>
+							<div class="invitCustomMid">
+								<h4>张林君</h4>
+								<p>13811005566</p>
+							</div>
+							<div class="invitCustomRight">
+								<p class="red">共3单</p>
+								<p>邀请人：李俊奇</p>
+							</div>
+						</div>
+						<p class="invitCustomTxt">注册时间：2020-12-21 12:00:00</p>
+					</li>
+					<li>
+						<div class="invitCustomTop">
+							<img class="invitCustomImg" src="images/invitCusHead.png"/>
+							<div class="invitCustomMid">
+								<h4>张林君</h4>
+								<p>13811005566</p>
+							</div>
+							<div class="invitCustomRight">
+								<p class="red">共3单</p>
+								<p>邀请人：李俊奇</p>
+							</div>
+						</div>
+						<p class="invitCustomTxt">注册时间：2020-12-21 12:00:00</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+			}
+		});
+		
+	</script>
+
+</html>

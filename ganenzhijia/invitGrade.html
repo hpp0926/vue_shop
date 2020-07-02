@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>推广商中心</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body class="bgWhite">
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					推广商中心
+				</h1>
+			</header>
+			<div class="mui-content">
+				<div class="gradeHead">
+					<img class="gradeImg" src="images/perHead.png"/>
+					<span>代理商</span>
+				</div>
+				<div class="gradeTab">
+					<span class="gradeTabTxt">健康大使</span>
+					<span class="gradeTabLine"></span>
+					<span class="gradeTabTxt">经理</span>
+					<span class="gradeTabLine"></span>
+					<span class="gradeTabTxt">店长</span>
+					<span class="gradeTabLine"></span>
+					<span class="gradeTabTxt">代理商</span>
+				</div>
+				<div class="gradeBox">
+					<h3 class="gradeTit">等级规则</h3>
+					<h4 class="gradeTitRed">健康大使</h4>
+					<h5 class="gradeTitSub">规则介绍</h5>
+					<p class="gradeTxt">购物满 120元</p>
+					<h5 class="gradeTitSub">权益介绍</h5>
+					<p class="gradeTxt">购物满 120元</p>
+					
+					<h4 class="gradeTitRed">经理</h4>
+					<h5 class="gradeTitSub">规则介绍</h5>
+					<p class="gradeTxt">购物满 120元</p>
+					<h5 class="gradeTitSub">权益介绍</h5>
+					<p class="gradeTxt">购物满 120元</p>
+					
+					<h4 class="gradeTitRed">店长</h4>
+					<h5 class="gradeTitSub">规则介绍</h5>
+					<p class="gradeTxt">购物满 120元</p>
+					<h5 class="gradeTitSub">权益介绍</h5>
+					<p class="gradeTxt">购物满 120元</p>
+					
+					<h4 class="gradeTitRed">代理商</h4>
+					<h5 class="gradeTitSub">规则介绍</h5>
+					<p class="gradeTxt">购物满 120元</p>
+					<h5 class="gradeTitSub">权益介绍</h5>
+					<p class="gradeTxt">购物满 120元</p>
+				</div>
+			</div>
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item" id="page_index" target="index.html">
+					<span class="tab_icon tab_icon1"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item" id="page_category" target="category.html">
+					<span class="tab_icon tab_icon2"></span>
+					<span class="mui-tab-label">自营</span>
+				</a>
+				<a class="mui-tab-item" id="page_jf" target="integral.html">
+					<span class="tab_icon tab_icon3"></span>
+					<span class="mui-tab-label">积分</span>
+				</a>
+				<a class="mui-tab-item" id="page_shop" target="shop.html">
+					<span class="tab_icon tab_icon4"></span>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+				<a class="mui-tab-item mui-active" id="page_my" target="my.html">
+					<span class="tab_icon tab_icon5"></span>
+					<span class="mui-tab-label">我的</span>
+				</a>
+			</nav>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+			}
+		});
+		
+	</script>
+
+</html>

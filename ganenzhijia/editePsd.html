@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>修改密码</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					修改密码
+				</h1>
+			</header>
+			<div class="mui-content">
+				<ul class="editePro">
+					<li class="cur">
+						<span class="editeProIcon"></span>
+						<span class="editeProTxt">验证手机号码</span>
+						<span class="editeProLine"></span>
+					</li>
+					<li>
+						<span class="editeProIcon"></span>
+						<span class="editeProTxt">设置新密码</span>
+					</li>
+				</ul>
+				<div class="editePsdBox">
+					<ul class="registInputBox">
+						<li>
+							<h4>手机号码</h4>
+							<p><input type="tel" class="registInput" value="13522453672" /></p>
+						</li>
+						<li>
+							<p>
+								<input type="number" class="registInput" placeholder="请输入短信验证码">
+								<button class="vcodeBtn">发送验证码</button>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-text-center">
+					<button class="applyBtn">下一步</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+
+			},
+			created: function() {
+
+			},
+			mounted: function() {
+
+			},
+			methods: {
+				
+			}
+		});
+	</script>
+
+</html>

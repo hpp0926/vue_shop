@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加账号</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					添加账号
+				</h1>
+			</header>
+			<div class="mui-content">
+				<ul class="addCardBox">
+					<li>
+						<span>银行名称</span>
+						<span class="addCardRight">请选择所属银行</span>
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</li>
+					<li>
+						<span>开户行所在地</span>
+						<span class="addCardRight">请选择</span>
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</li>
+					<li>
+						<span>银行账号</span>
+						<input type="text" class="addCardInput" placeholder="请输入银行账号" value="" />
+					</li>
+					<li>
+						<span>用户名</span>
+						<input type="text" class="addCardInput" placeholder="请输入用户名" value="" />
+					</li>
+					<li>
+						<span>账户类型</span>
+						<div class="addCardCheck">
+							<div class="mui-input-row mui-radio">
+								<label>对私账户 </label>
+								<input name="radio1" type="radio" >
+							</div>
+							<div class="mui-input-row mui-radio">
+								<label>对公账户</label>
+								<input name="radio1" type="radio" >
+							</div>
+						</div>
+					</li>
+					<li>
+						<span>银行卡类型</span>
+						<div class="addCardCheck">
+							<div class="mui-input-row mui-radio">
+								<label>借记卡</label>
+								<input name="radio2" type="radio" >
+							</div>
+							<div class="mui-input-row mui-radio">
+								<label>银行卡</label>
+								<input name="radio2" type="radio" >
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="mui-text-center">
+					<button class="applyBtn">提交</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+			}
+		});
+		
+	</script>
+
+</html>

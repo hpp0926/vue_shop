@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>提现申请</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="vue">
+			<header class="mui-bar mui-bar-nav">
+				<span class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<h1 class="mui-title">
+					提现申请
+				</h1>
+			</header>
+			<div class="mui-content">
+				<div class="cashApplyTop">
+					<img class="bankLogo" src="images/bank_gsh.png" alt="" />
+					<div class="applyBank">
+						<h4 class="bankName">中国工商银行</h4>
+						<p>尾号3804储蓄号</p>
+					</div>
+					<span class="mui-icon mui-icon-arrowright"></span>
+				</div>
+				<div class="cashApplyPrice">
+					<h4 class="cashApplyTit">提现金额</h4>
+					<div class="cashApplyInput">
+						<span>￥</span>
+						<input type="text" value="152.2" />
+						<span class="red">全部提现</span>
+					</div>
+					<p class="cashApplySup">可提现金额￥1500.00</p>
+				</div>
+				<div class="cashApplyTxt">
+					<p>目前最低提现金额为100元</p>
+					<p>每笔手续费 5%</p>
+					<p>审核通过后 1个工作日内到账</p>
+				</div>
+				<div class="mui-text-center">
+					<button class="applyBtn">提现</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-2.5.21.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#vue",
+			data: {
+				phoneNumber:"",  //手机号
+				loginPsd:"",     //密码
+				isAble:true   //登录按钮状态
+				
+			},
+			created: function() {
+				
+			},
+			mounted: function() {
+
+			},
+			methods: {
+			}
+		});
+		
+	</script>
+
+</html>
